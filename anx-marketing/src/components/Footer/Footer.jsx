@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -12,8 +12,15 @@ export default function Footer() {
                 Resources
               </h2>
               <ul className="text-gray-500 font-medium">
-                <li className="mb-4 hover:underline">Home</li>
-                <li className="hover:underline">About</li>
+                <li className="mb-4 hover:underline">
+                  <Link to="/">Home</Link>
+                </li>
+                <li className="mb-4 hover:underline">
+                  <Link to="/about">About us</Link>
+                </li>
+                <li className="hover:underline">
+                  <Link to="/constact">Contact Us</Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -28,10 +35,9 @@ export default function Footer() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Github
+                    Twitter
                   </a>
                 </li>
-                <li className="hover:underline">Discord</li>
               </ul>
             </div>
             <div>
@@ -47,14 +53,14 @@ export default function Footer() {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">
+          <span className="text-sm text-gray-500 sm:text-center ml-10">
             © 2023
             <a href="https://hiteshchoudhary.com/" className="hover:underline">
               ankitbhandare
             </a>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+          <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0 mr-10">
             <svg
               className="w-4 h-4"
               aria-hidden="true"

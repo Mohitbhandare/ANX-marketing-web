@@ -1,18 +1,31 @@
 function Home() {
   return (
     <>
-      <div className="flex">
-        <div className="basis-2 border-2 text-5xl m-20 p-20">
-          RE - THINK PERFORMANCE MARKETING
-        </div>
-        <div className="basis-3 m-20 py-10 border-2">
-          <img
-            src="../../images/pexels-eva-bronzini-7661329.jpg"
-            alt=""
-            width={100}
-            height={100}
-          />
-        </div>
+      <div className="mx-auto w-full max-w-7xl">
+        <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
+          <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
+            <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-left sm:ml-auto">
+              <h2 className="text-4xl font-bold sm:text-5xl">
+                RE - THINK PERFORMANCE MARKETING
+              </h2>
+              <h5>
+                We are a 360 performance marketing consultancy firm, offering
+                technology, digital & operational solutions for successfully
+                scaling brands online with a holistic consulting framework to
+                help them seamlessly start, grow & deliver an engaging
+                online-commerce experience.
+              </h5>
+            </div>
+          </div>
+
+          <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
+            <img
+              className="w-96"
+              src="https://www.pexels.com/photo/brown-framed-eyeglasses-905163/"
+              alt="image1"
+            />
+          </div>
+        </aside>
       </div>
       <h1 className="text-center text-3xl font-bold">Our Services</h1>
       <div className="flex w-auto h-auto">
